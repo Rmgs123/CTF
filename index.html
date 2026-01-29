@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CTF</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <div class="panel" id="stageCard" style="display:none;">
+      <div id="stageBody" class="content"></div>
+
+      <div class="tokenline" id="tokenLine" style="display:none;">
+        <code id="tokenView"></code>
+      </div>
+
+      <div class="hr"></div>
+
+      <label class="label" for="answerInput">Ответ</label>
+      <input id="answerInput" type="text" autocomplete="off" spellcheck="false" />
+
+      <div class="actions">
+        <button class="btn" id="checkBtn">OK</button>
+        <button class="btn ghost" id="hintBtn">Подсказка</button>
+      </div>
+
+      <div id="msg" class="msg"></div>
+
+      <div id="hintBox" class="hintbox" style="display:none;">
+        <div class="hinttitle">Подсказка</div>
+        <ul id="hintsList"></ul>
+      </div>
+    </div>
+  </main>
+
+  <script src="stages.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
